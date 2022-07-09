@@ -1,5 +1,5 @@
 from unittest import TestCase
-from ex_49.lexicon import lexicon
+from  ex_49.lexicon import scan
 
 class TestBasicFunction(TestCase):
     def test(self):
@@ -7,7 +7,7 @@ class TestBasicFunction(TestCase):
 
 class Testex_49(TestCase):
     def test_directions(self):
-        self.assertEqual(lexicon.scan("north"), [('direction', 'north')])
+        self.assertEqual(scan("north"), [('direction', 'north')])
 
 if __name__ == '__main__':
     unittest.main()
