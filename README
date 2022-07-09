@@ -1,0 +1,3 @@
+my goal is to be able to run unittests in this package from the top-level directory with a single command, like `python -m unittest discover -v`
+
+I want to document any additional steps I may need to take beyond a "git pull" that are required to do that, such as if I need to install the package or anything else.
