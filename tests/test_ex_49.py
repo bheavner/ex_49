@@ -1,5 +1,5 @@
 from unittest import TestCase
-from  ex_49.lexicon import scan
+from ex_49.lexicon import scan
 
 class TestBasicFunction(TestCase):
     def test(self):

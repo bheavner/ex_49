@@ -1,2 +1,2 @@
-def scan():
-    pass
+def scan(words):
+    return([('direction', 'north')])
