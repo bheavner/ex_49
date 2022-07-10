@@ -45,5 +45,14 @@ class Testex_49(TestCase):
         self.assertEqual(result, [('number', 3),
                                   ('number', 91234)])
 
+    def test_errors(self):
+        self.assertEqual(lexicon.scan('ASDFADFASDF'),
+                         [('error', 'ASDFADFASDF')])
+
+        result = lexicon.scan('bear IAS princess')
+        self.assertEqual(result, [('noun', 'bear'),
+                                  ('error', 'IAS'),
+                                  ('noun', 'princess')])
+
 if __name__ == '__main__':
     unittest.main()

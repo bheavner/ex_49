@@ -26,5 +26,6 @@ def scan(input_string):
             sentence.append(('noun', word))
         elif (len(word) < 10) & (convert_number(word) is not None):
             sentence.append(('number', convert_number(word)))
-
+        else:
+            sentence.append(('error', word))
     return(sentence)
