@@ -1,5 +1,4 @@
 from unittest import TestCase
-#from ex_49.lexicon import scan
 from ex_49 import lexicon
 
 class TestTests(TestCase):
