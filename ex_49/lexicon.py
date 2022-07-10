@@ -24,5 +24,7 @@ def scan(input_string):
             sentence.append(('stop', word))
         elif word in game_lexicon['nouns']:
             sentence.append(('noun', word))
+        elif (len(word) < 10) & (convert_number(word) is not None):
+            sentence.append(('number', convert_number(word)))
 
     return(sentence)

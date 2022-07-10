@@ -34,6 +34,16 @@ class Testex_49(TestCase):
     def test_nounts(self):
         self.assertEqual(lexicon.scan('bear'), [('noun', 'bear')])
 
+        result = lexicon.scan('bear princess')
+        self.assertEqual(result, [('noun', 'bear'),
+                                  ('noun', 'princess')])
+
+    def test_numbers(self):
+        self.assertEqual(lexicon.scan('1234'), [('number', 1234)])
+
+        result = lexicon.scan('3 91234')
+        self.assertEqual(result, [('number', 3),
+                                  ('number', 91234)])
 
 if __name__ == '__main__':
     unittest.main()
